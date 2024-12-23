@@ -55,6 +55,34 @@ ul {
     font-weight: bold;
 }
 
+.my-form {
+    width: 50%;
+}
+  
+.row {
+    display: flex;
+    gap: 1
+    0px; /* space between the fields */
+    margin-bottom: 20px;
+}
+  
+.field {
+    flex: 0.5; /* Ensure the fields grow to fill available space */
+}
+  
+.field label {
+    display: block;
+    margin-bottom: 8px;
+}
+  
+.field input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+  
+
 footer p{
     display: flex;
     align-items: center;
