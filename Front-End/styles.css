@@ -24,6 +24,15 @@ nav {
     color: white;
 }
 
+.navbar-center {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
 main {
     flex-grow: 1;
     padding: 20px;
@@ -55,33 +64,39 @@ ul {
     font-weight: bold;
 }
 
-.my-form {
-    width: 50%;
+.form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
 }
   
-.row {
+.row1,
+.row2 {
     display: flex;
-    gap: 1
-    0px; /* space between the fields */
-    margin-bottom: 20px;
+    justify-content: space-between; /* Ensure even spacing between inputs */
+    gap: 10px; /* Add space between fields */
+    margin-bottom: 20px; /* Space between rows */
 }
-  
+
+.row1 {
+    padding-top: 20px;
+}
+
+.row2 {
+    justify-content: center;
+}
+
 .field {
-    flex: 0.5; /* Ensure the fields grow to fill available space */
-}
-  
-.field label {
-    display: block;
-    margin-bottom: 8px;
+    flex: 1; /* Make all fields take equal width */
 }
   
 .field input {
-    width: 100%;
+    width: 100%; /* Ensure input fields stretch to their container */
     padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 2px solid #222121;
+    border-radius: 8px;
 }
-  
 
 footer p{
     display: flex;
