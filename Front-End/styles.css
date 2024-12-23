@@ -1,0 +1,90 @@
+header {
+    background-color: #6CABE7;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-link {
+    color: white;
+}
+
+main {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: bottom;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-family: "Libre Baskerville";
+}
+
+.card-text {
+    font-family: "Fjalla One";
+    font-weight: bold;
+}
+
+.my-form {
+    width: 50%;
+}
+  
+.row {
+    display: flex;
+    gap: 1
+    0px; /* space between the fields */
+    margin-bottom: 20px;
+}
+  
+.field {
+    flex: 0.5; /* Ensure the fields grow to fill available space */
+}
+  
+.field label {
+    display: block;
+    margin-bottom: 8px;
+}
+  
+.field input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+  
+
+footer p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
